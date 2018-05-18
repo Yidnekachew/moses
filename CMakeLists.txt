@@ -203,7 +203,7 @@ IF (ATOMSPACE_FOUND)
 	ADD_DEFINITIONS(-DHAVE_ATOMSPACE)
 	SET(HAVE_ATOMSPACE 1)
 ELSE (ATOMSPACE_FOUND)
-	MESSAGE(FATAL_ERROR "AtomSpace missing: it is needed for everything!")
+	MESSAGE(FATAL_ERROR "AtomSpace missing: it is needed to build this package!")
 ENDIF (ATOMSPACE_FOUND)
 
 # MPI is needed for MOSES on compute clusters.

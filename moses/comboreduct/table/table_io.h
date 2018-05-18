@@ -160,6 +160,8 @@ std::istream& istreamDenseTable(std::istream& in, Table& tab,
                                 const std::vector<std::string>& ignore_features,
                                 const type_tree& tt, bool has_header);
 
+std::istream &get_data_line(std::istream& is, std::string& line);
+
 // WARNING: this implementation only supports boolean ctable!!!!
 CTable loadCTable(const std::string& file_name);
 
